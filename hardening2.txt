@@ -1,0 +1,187 @@
+Script started on Mon 26 Jun 2017 06:08:33 PM UTC
+]0;root@ubuntu-xenial: ~root@ubuntu-xenial:~# date 
+Mon Jun 26 18:08:39 UTC 2017
+]0;root@ubuntu-xenial: ~root@ubuntu-xenial:~# o[Kid 
+uid=0(root) gid=0(root) groups=0(root)
+]0;root@ubuntu-xenial: ~root@ubuntu-xenial:~# mkdir -p ansible/roles-ubuntu/roles
+]0;root@ubuntu-xenial: ~root@ubuntu-xenial:~# cd ansible/roles-ubuntu
+]0;root@ubuntu-xenial: ~/ansible/roles-ubunturoot@ubuntu-xenial:~/ansible/roles-ubuntu# git clone https://github.com/awailly/ cis-ubuntu-ansible.git roles/cis
+Cloning into 'roles/cis'...
+remote: Counting objects: 1865, done.[K
+Receiving objects:   0% (1/1865)   Receiving objects:   1% (19/1865)   Receiving objects:   2% (38/1865)   Receiving objects:   3% (56/1865)   Receiving objects:   4% (75/1865)   Receiving objects:   5% (94/1865)   Receiving objects:   6% (112/1865)   Receiving objects:   7% (131/1865)   Receiving objects:   8% (150/1865)   Receiving objects:   9% (168/1865)   Receiving objects:  10% (187/1865)   Receiving objects:  11% (206/1865)   Receiving objects:  12% (224/1865)   Receiving objects:  13% (243/1865)   Receiving objects:  14% (262/1865)   Receiving objects:  15% (280/1865)   Receiving objects:  16% (299/1865)   Receiving objects:  17% (318/1865)   Receiving objects:  18% (336/1865)   Receiving objects:  19% (355/1865)   Receiving objects:  20% (373/1865)   Receiving objects:  21% (392/1865)   Receiving objects:  22% (411/1865)   Receiving objects:  23% (429/1865)   Receiving objects:  24% (448/1865)   Receiving objects:  25% (467/1865)   Receiving objects:  26% (485/1865)   Receiving objects:  27% (504/1865)   Receiving objects:  28% (523/1865)   Receiving objects:  29% (541/1865)   Receiving objects:  30% (560/1865)   Receiving objects:  31% (579/1865)   Receiving objects:  32% (597/1865)   Receiving objects:  33% (616/1865)   Receiving objects:  34% (635/1865)   Receiving objects:  35% (653/1865)   Receiving objects:  36% (672/1865)   Receiving objects:  37% (691/1865)   Receiving objects:  38% (709/1865)   Receiving objects:  39% (728/1865)   Receiving objects:  40% (746/1865)   Receiving objects:  41% (765/1865)   Receiving objects:  42% (784/1865)   Receiving objects:  43% (802/1865)   Receiving objects:  44% (821/1865)   Receiving objects:  45% (840/1865)   Receiving objects:  46% (858/1865)   Receiving objects:  47% (877/1865)   Receiving objects:  48% (896/1865)   Receiving objects:  49% (914/1865)   Receiving objects:  50% (933/1865)   Receiving objects:  51% (952/1865)   Receiving objects:  52% (970/1865)   Receiving objects:  53% (989/1865)   Receiving objects:  54% (1008/1865)   Receiving objects:  55% (1026/1865)   Receiving objects:  56% (1045/1865)   Receiving objects:  57% (1064/1865)   Receiving objects:  58% (1082/1865)   Receiving objects:  59% (1101/1865)   Receiving objects:  60% (1119/1865)   Receiving objects:  61% (1138/1865)   Receiving objects:  62% (1157/1865)   Receiving objects:  63% (1175/1865)   Receiving objects:  64% (1194/1865)   Receiving objects:  65% (1213/1865)   Receiving objects:  66% (1231/1865)   Receiving objects:  67% (1250/1865)   Receiving objects:  68% (1269/1865)   Receiving objects:  69% (1287/1865)   Receiving objects:  70% (1306/1865)   Receiving objects:  71% (1325/1865)   Receiving objects:  72% (1343/1865)   Receiving objects:  73% (1362/1865)   Receiving objects:  74% (1381/1865)   Receiving objects:  75% (1399/1865)   Receiving objects:  76% (1418/1865)   Receiving objects:  77% (1437/1865)   Receiving objects:  78% (1455/1865)   Receiving objects:  79% (1474/1865)   Receiving objects:  80% (1492/1865)   remote: Total 1865 (delta 0), reused 0 (delta 0), pack-reused 1865[K
+Receiving objects:  81% (1511/1865)   Receiving objects:  82% (1530/1865)   Receiving objects:  83% (1548/1865)   Receiving objects:  84% (1567/1865)   Receiving objects:  85% (1586/1865)   Receiving objects:  86% (1604/1865)   Receiving objects:  87% (1623/1865)   Receiving objects:  88% (1642/1865)   Receiving objects:  89% (1660/1865)   Receiving objects:  90% (1679/1865)   Receiving objects:  91% (1698/1865)   Receiving objects:  92% (1716/1865)   Receiving objects:  93% (1735/1865)   Receiving objects:  94% (1754/1865)   Receiving objects:  95% (1772/1865)   Receiving objects:  96% (1791/1865)   Receiving objects:  97% (1810/1865)   Receiving objects:  98% (1828/1865)   Receiving objects:  99% (1847/1865)   Receiving objects: 100% (1865/1865)   Receiving objects: 100% (1865/1865), 650.13 KiB | 0 bytes/s, done.
+Resolving deltas:   0% (0/1158)   Resolving deltas:   1% (17/1158)   Resolving deltas:   2% (26/1158)   Resolving deltas:   3% (37/1158)   Resolving deltas:   4% (48/1158)   Resolving deltas:   6% (74/1158)   Resolving deltas:   7% (86/1158)   Resolving deltas:   8% (93/1158)   Resolving deltas:  10% (123/1158)   Resolving deltas:  11% (137/1158)   Resolving deltas:  12% (145/1158)   Resolving deltas:  13% (156/1158)   Resolving deltas:  14% (168/1158)   Resolving deltas:  15% (175/1158)   Resolving deltas:  18% (216/1158)   Resolving deltas:  20% (234/1158)   Resolving deltas:  21% (247/1158)   Resolving deltas:  24% (279/1158)   Resolving deltas:  25% (291/1158)   Resolving deltas:  26% (308/1158)   Resolving deltas:  29% (337/1158)   Resolving deltas:  32% (378/1158)   Resolving deltas:  33% (384/1158)   Resolving deltas:  43% (508/1158)   Resolving deltas:  45% (528/1158)   Resolving deltas:  51% (594/1158)   Resolving deltas:  52% (610/1158)   Resolving deltas:  64% (744/1158)   Resolving deltas:  66% (775/1158)   Resolving deltas:  67% (776/1158)   Resolving deltas:  68% (789/1158)   Resolving deltas:  69% (800/1158)   Resolving deltas:  70% (818/1158)   Resolving deltas:  73% (848/1158)   Resolving deltas:  75% (872/1158)   Resolving deltas:  76% (887/1158)   Resolving deltas:  78% (907/1158)   Resolving deltas:  79% (924/1158)   Resolving deltas:  81% (945/1158)   Resolving deltas:  82% (960/1158)   Resolving deltas:  84% (978/1158)   Resolving deltas:  86% (1003/1158)   Resolving deltas:  87% (1012/1158)   Resolving deltas:  88% (1022/1158)   Resolving deltas:  89% (1039/1158)   Resolving deltas:  90% (1052/1158)   Resolving deltas:  91% (1064/1158)   Resolving deltas:  92% (1067/1158)   Resolving deltas:  93% (1077/1158)   Resolving deltas: 100% (1158/1158)   Resolving deltas: 100% (1158/1158), done.
+Checking connectivity... done.
+]0;root@ubuntu-xenial: ~/ansible/roles-ubunturoot@ubuntu-xenial:~/ansible/roles-ubuntu# cat >>  playbook.yml << 'EOF'
+> ---
+> - hosts: all
+>   roles:
+>     - cis
+> EOF
+]0;root@ubuntu-xenial: ~/ansible/roles-ubunturoot@ubuntu-xenial:~/ansible/roles-ubuntu# 
+]0;root@ubuntu-xenial: ~/ansible/roles-ubunturoot@ubuntu-xenial:~/ansible/roles-ubuntu# grep root /etc/shadow 
+[01;31m[Kroot[m[K:*:17342:0:99999:7:::
+]0;root@ubuntu-xenial: ~/ansible/roles-ubunturoot@ubuntu-xenial:~/ansible/roles-ubuntu# passwd root
+Enter new UNIX password: 
+Retype new UNIX password: 
+passwd: password updated successfully
+]0;root@ubuntu-xenial: ~/ansible/roles-ubunturoot@ubuntu-xenial:~/ansible/roles-ubuntu# passwd rootgrep root /etc/shadow 
+[01;31m[Kroot[m[K:$6$VJ9NGjsj$LZrMWFgU5kzxuj3RN7np/LL5L.kRD00nn8VODjOJVhSupqYHQhANOtbWsk8oleRnSNiJR.O.HGctpNdfqYv.R.:17343:0:99999:7:::
+]0;root@ubuntu-xenial: ~/ansible/roles-ubunturoot@ubuntu-xenial:~/ansible/roles-ubuntu# grub-mkpasswd-pbkdf2
+Enter password: 
+Reenter password: 
+PBKDF2 hash of your password is grub.pbkdf2.sha512.10000.C19D5AD250544AA3EB239DAEAF48744A87760B4F327FF1FD5101689C247605B3D7200206AB07F6C5AFF80FA93BFB2E0DA718F09AF7300323B8F7C0FEEAC96749.70B2C56C1E08292775BFF975D02C5B16C2D722DF2FA03BEBB39548769EE2C1A5C5784B0B57CB57655B81EAED96050986B9AE3EFCF8857E12E157634D31885A7D
+]0;root@ubuntu-xenial: ~/ansible/roles-ubunturoot@ubuntu-xenial:~/ansible/roles-ubuntu# cat dev[Kf[K[K[K[K[K[K[Kls 
+playbook.yml  [0m[01;34mroles[0m
+]0;root@ubuntu-xenial: ~/ansible/roles-ubunturoot@ubuntu-xenial:~/ansible/roles-ubuntu# cd roles/
+]0;root@ubuntu-xenial: ~/ansible/roles-ubuntu/rolesroot@ubuntu-xenial:~/ansible/roles-ubuntu/roles# ls 
+[0m[01;34mcis[0m
+]0;root@ubuntu-xenial: ~/ansible/roles-ubuntu/rolesroot@ubuntu-xenial:~/ansible/roles-ubuntu/roles# cd cis/
+]0;root@ubuntu-xenial: ~/ansible/roles-ubuntu/roles/cisroot@ubuntu-xenial:~/ansible/roles-ubuntu/roles/cis# ls 
+CONTRIBUTORS  Dockerfile  [0m[01;34mhandlers[0m  [01;34mmeta[0m        README.md  [01;34mtests[0m        [01;34mvars[0m
+[01;34mdefaults[0m      [01;34mdocs[0m        LICENSE   mkdocs.yml  [01;34mtasks[0m      Vagrantfile
+]0;root@ubuntu-xenial: ~/ansible/roles-ubuntu/roles/cisroot@ubuntu-xenial:~/ansible/roles-ubuntu/roles/cis# cd [K[K[Kcat dev[Kfaults/main.yml 
+# Please enter following parameters before system hardening
+
+
+
+# Section 01
+
+# The execution is faster without packages upgrade.
+apt_upgrade: True
+
+# Only update apt cache if older than this value (in seconds)
+apt_cache_valid_time: 3600
+
+
+# Section 02
+
+partitioning: False
+
+# True if run/shm is write-protected.
+run_shm_read_only: False
+
+
+# Section 03
+
+# Default root password: root
+root_password: $6$5Mklo2YKvXOM50Zj$E8w4oiykpG9WiElxwHLx85rFFFG0z/lu0vp0wiU0SAnMnw0CmYhmArxvLxBjWQ6XVHv88XQyfpTjX4CPH89hf1
+
+# Grub Bootloader PBKDF2 Password (use grub-mkpasswd-pbkdf2 to generate)
+root_password_grub: grub.pbkdf2.sha512.10000.529DB4AF052F170948C1DB2A754CEA8A286804DA2D9A4EB5A7CCE4B8636775C83EAF8A1093CBDBC256954BCE789A58EFB3B75D23DFC76583C703922D5DADB69E.4D5BD1EC6736057095CA2EBF55C2DA02DFB0B0784F2105A396F1CEF11FEB1483D5C420F412E2E817E2570DDFC22ABCC329C5FF44091A0ACDE67171FF72E96CFD
+
+# Section 04
+
+# Set this flag to use AppArmor. It is useful to disable it when the system does not support the kernel module.
+use_apparmor: True
+
+# Modify the kernel behavior to disallow dump of suid binaries.
+restrict_core_dumps: True
+
+# Set this flag to randomize virtual memory region placement.
+enable_aslr: True
+
+
+# Section 06
+
+# We focus a server installation, but we may be accept some desktops.
+remove_xserver: True
+
+# Default ntp server for when none-already exists.
+ntp_server: 0.fr.pool.ntp.org
+
+
+# Section 07
+
+# Set this flag if the kernel has TCP syncookies support.
+enable_tcp_syncookies: True
+
+# A Docker host will need this set to 1 in order to route container traffic.
+# (https://docs.docker.com/engine/userguide/networking/default_network/container-communication) 
+net_ipv4_ip_forward: 0
+
+# Enable the activate_ufw variable with True to install and enable service on boot.
+# NOTE: If not properly configured it may result in incorrect services behavior.
+activate_ufw: True
+
+# Disable all ipv6 interfaces. Suggested if the protocol is not used.
+disable_ipv6: True
+
+
+# Section 08
+
+# Set auditd logs file size in /var/log/auditd
+max_log_file_auditd: 200
+
+# Set this flag if you have a remote rsyslog server to send logs.
+# WARNING: Update the IP address or rsyslog will hit 100% of the CPU usage.
+set_rsyslog_remote: False
+
+# Override to change the group and permissions of log files in 8.2.4 (eg, to 'adm' and 'g-wx,o-rwx' respectively)
+rsyslog_log_files_group: root
+rsyslog_log_files_permissions: og-rwx
+
+# Set rsyslog's logs remote server address to send logs. 
+# WARNING: Update the IP address without localhost address or rsyslog will hit 100% of the CPU usage
+remote_logs_host_address: X.X.X.X
+
+# Set this flag to use AIDE. Disable when using another file integrity checker like OSSEC.
+use_aide: True
+
+
+
+# Section 09
+
+# This variable will install and setup the pam_cracklib module, enforcing strong passwords settings.
+use_pam_cracklib: True
+
+
+# Section 13
+
+# This variable defines if accounts without password have to be locked
+lock_shadow_accounts: False
+
+# The modification of user homes may lock users and set the system in an errored state. Set to false if one of the user is using / as home.
+modify_user_homes: True
+]0;root@ubuntu-xenial: ~/ansible/roles-ubuntu/roles/cisroot@ubuntu-xenial:~/ansible/roles-ubuntu/roles/cis# v[Kcat vats/[K[K[K[Kr[Kars/main.yml 
+# This file contains variables specific to your environment
+root_password: $6$VJ9NGjsj$LZrMWFgU5kzxuj3RN7np/LL5L.kRD00nn8VODjOJVhSupqYHQhANOtbWsk8oleRnSNiJR.O.HGctpNdfqYv.R.
+root_password_grub: grub.pbkdf2.sha512.10000.C19D5AD250544AA3EB239DAEAF48744A87760B4F327FF1FD5101689C247605B3D7200206AB07F6C5AFF80FA93BFB2E0DA718F09AF7300323B8F7C0FEEAC96749.70B2C56C1E08292775BFF975D02C5B16C2D722DF2FA03BEBB39548769EE2C1A5C5784B0B57CB57655B81EAED96050986B9AE3EFCF8857E12E157634D31885A7D
+
+
+]0;root@ubuntu-xenial: ~/ansible/roles-ubuntu/roles/cisroot@ubuntu-xenial:~/ansible/roles-ubuntu/roles/cis# cd ../..
+]0;root@ubuntu-xenial: ~/ansible/roles-ubunturoot@ubuntu-xenial:~/ansible/roles-ubuntu# ls 
+playbook.yml  [0m[01;34mroles[0m
+]0;root@ubuntu-xenial: ~/ansible/roles-ubunturoot@ubuntu-xenial:~/ansible/roles-ubuntu# without localhost address[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kansible-playbook -b -u USER -i 'IPADD RESS,' playbook.yml[1P[1P[1P[1P[1P[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C' [1Pplaybook.yml[A]0;root@ubuntu-xenial: ~/ansible/roles-ubunturoot@ubuntu-xenial:~/ansible/roles-ubuntu# [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C' p[1Playbook.yml[A]0;root@ubuntu-xenial: ~/ansible/roles-ubunturoot@ubuntu-xenial:~/ansible/roles-ubuntu# [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C' pl[1Paybook.yml[A]0;root@ubuntu-xenial: ~/ansible/roles-ubunturoot@ubuntu-xenial:~/ansible/roles-ubuntu# [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C' pla[1Pybook.yml[A]0;root@ubuntu-xenial: ~/ansible/roles-ubunturoot@ubuntu-xenial:~/ansible/roles-ubuntu# [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C' play[1Pbook.yml[A]0;root@ubuntu-xenial: ~/ansible/roles-ubunturoot@ubuntu-xenial:~/ansible/roles-ubuntu# [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C1' playbook.yml[A]0;root@ubuntu-xenial: ~/ansible/roles-ubunturoot@ubuntu-xenial:~/ansible/roles-ubuntu# [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C0' playbook.yml[A]0;root@ubuntu-xenial: ~/ansible/roles-ubunturoot@ubuntu-xenial:~/ansible/roles-ubuntu# [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C.' playbook.yml[A]0;root@ubuntu-xenial: ~/ansible/roles-ubunturoot@ubuntu-xenial:~/ansible/roles-ubuntu# [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C0' playbook.yml[A]0;root@ubuntu-xenial: ~/ansible/roles-ubunturoot@ubuntu-xenial:~/ansible/roles-ubuntu# [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C.' playbook.yml[1@2[1@.[1@1[1@5[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C -i '10.0.2.[1P[A]0;root@ubuntu-xenial: ~/ansible/roles-ubunturoot@ubuntu-xenial:~/ansible/roles-ubuntu# [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C -i '10.0.2.1[1P[A]0;root@ubuntu-xenial: ~/ansible/roles-ubunturoot@ubuntu-xenial:~/ansible/roles-ubuntu# [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C -i '10.0.2.15[1P[A]0;root@ubuntu-xenial: ~/ansible/roles-ubunturoot@ubuntu-xenial:~/ansible/roles-ubuntu# [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C -i '10.0.2.15'[1P playbook.yml[A]0;root@ubuntu-xenial: ~/ansible/roles-ubunturoot@ubuntu-xenial:~/ansible/roles-ubuntu# [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cr -i '10.0.2.15' playbook.yml[A]0;root@ubuntu-xenial: ~/ansible/roles-ubunturoot@ubuntu-xenial:~/ansible/roles-ubuntu# [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Co -i '10.0.2.1[1@5[A]0;root@ubuntu-xenial: ~/ansible/roles-ubunturoot@ubuntu-xenial:~/ansible/roles-ubuntu# [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Co -i '10.0.2.[1@1[A]0;root@ubuntu-xenial: ~/ansible/roles-ubunturoot@ubuntu-xenial:~/ansible/roles-ubuntu# [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ct -i '10.0.2[1@.[A]0;root@ubuntu-xenial: ~/ansible/roles-ubunturoot@ubuntu-xenial:~/ansible/roles-ubuntu# [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+
+[1;35m [WARNING]: Host file not found: 10.0.2.15[0m
+[1;35m[0m
+[1;35m [WARNING]: provided hosts list is empty, only localhost is available[0m
+[1;35m[0m
+
+PLAY [all] *********************************************************************
+[0;36mskipping: no hosts matched[0m
+
+PLAY RECAP *********************************************************************
+
+]0;root@ubuntu-xenial: ~/ansible/roles-ubunturoot@ubuntu-xenial:~/ansible/roles-ubuntu# ls 
+playbook.yml  [0m[01;34mroles[0m
+]0;root@ubuntu-xenial: ~/ansible/roles-ubunturoot@ubuntu-xenial:~/ansible/roles-ubuntu# ls ansible-playbook -b -u root -i '10.0.22.15' playbook.yml[1P[1P[1P[1P[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C' [1Pplaybook.yml[A]0;root@ubuntu-xenial: ~/ansible/roles-ubunturoot@ubuntu-xenial:~/ansible/roles-ubuntu# [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C' p[1Playbook.yml[A]0;root@ubuntu-xenial: ~/ansible/roles-ubunturoot@ubuntu-xenial:~/ansible/roles-ubuntu# [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C' pl[1Paybook.yml[A]0;root@ubuntu-xenial: ~/ansible/roles-ubunturoot@ubuntu-xenial:~/ansible/roles-ubuntu# [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C' pla[1Pybook.yml[A]0;root@ubuntu-xenial: ~/ansible/roles-ubunturoot@ubuntu-xenial:~/ansible/roles-ubuntu# [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C' play[1Pbook.yml[A]0;root@ubuntu-xenial: ~/ansible/roles-ubunturoot@ubuntu-xenial:~/ansible/roles-ubuntu# [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C/' playbook.yml[A]0;root@ubuntu-xenial: ~/ansible/roles-ubunturoot@ubuntu-xenial:~/ansible/roles-ubuntu# [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cr' playbook.yml[A]0;root@ubuntu-xenial: ~/ansible/roles-ubunturoot@ubuntu-xenial:~/ansible/roles-ubuntu# [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Co' playbook.yml[A]0;root@ubuntu-xenial: ~/ansible/roles-ubunturoot@ubuntu-xenial:~/ansible/roles-ubuntu# [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Co' playbook.yml[A]0;root@ubuntu-xenial: ~/ansible/roles-ubunturoot@ubuntu-xenial:~/ansible/roles-ubuntu# [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ct' playbook.yml[1@/[1@a[1@n[1@s[1@i[1@b[1@l[1@e[1@/[1@r[1@o[1@l[1@e[1@s[1@-[1@u[1@b[1@u[1@n[1@t[1@u[1@/[1@r[1@o[1@l[1@e[1@s[1@/[1@c[1@i[1@s[1@/[1@t[1@e[1@s[1@t[1@s[1@/[1@i[1@n[1@v[1@e[1@n[1@t[1@o[1@r[1@y
+
+PLAY [all] *********************************************************************
+
+TASK [Gathering Facts] *********************************************************
+The authenticity of host 'localhost (127.0.0.1)' can't be established.
+ECDSA key fingerprint is SHA256:u3v3XQj44/lwEBUct4IsNOCSgiZbS6qlsiWJM7LhULY.
+Are you sure you want to continue connecting (yes/no)? y
+Please type 'yes' or 'no': yes
+[1;31mfatal: [localhost]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: Warning: Permanently added 'localhost' (ECDSA) to the list of known hosts.\r\nPermission denied (publickey,password).\r\n", "unreachable": true}[0m
+	to retry, use: --limit @/root/ansible/roles-ubuntu/playbook.retry
+
+PLAY RECAP *********************************************************************
+[0;31mlocalhost[0m                  : ok=0    changed=0    [1;31munreachable=1   [0m failed=0   
+
+]0;root@ubuntu-xenial: ~/ansible/roles-ubunturoot@ubuntu-xenial:~/ansible/roles-ubuntu# ^C
+]0;root@ubuntu-xenial: ~/ansible/roles-ubunturoot@ubuntu-xenial:~/ansible/roles-ubuntu# exit
+
+Script done on Mon 26 Jun 2017 06:37:23 PM UTC
