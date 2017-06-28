@@ -1,1 +1,1 @@
-{"virtualbox":{"/vagrant":{"guestpath":"/vagrant","hostpath":"/home/rhodo/GIT/vagrant","disabled":false,"__vagrantfile":true}}}
+{"virtualbox":{"/vagrant":{"guestpath":"/vagrant","hostpath":"/opt/GIT/ROBOHODO/vagrant","disabled":false,"__vagrantfile":true}}}
